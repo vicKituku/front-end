@@ -1,0 +1,115 @@
+body, html {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(to bottom right, darkgrey, darkolivegreen);
+    transition: background-color 0.5s;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.2fr 1.5fr 1fr 1fr 0.8fr;
+    grid-template-areas:
+        'navbar navbar navbar navbar'
+        'sidebar main main main'
+        'sidebar section1 section2 section3'
+        'sidebar section4 section4 section4'
+        'footer footer footer footer'
+    ;
+    gap: 20px;
+    height: 100%;
+    animation: fadeIn is ease-in-out;
+}
+
+nav, main, #sidebar, #section1, #section2, #section3, #section4, footer {
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+nav {
+    grid-area: navbar;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: #ccc;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    grid-area: main;
+    background-color: #ecf0f1;
+}
+
+#sidebar {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    grid-area: sidebar;
+    background-color: #3498db;
+}
+
+#section1 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    grid-area: section1;
+    background-color: #e74;
+}
+
+#section2 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    grid-area: section2;
+    background-color: #9b59b6;
+}
+
+#section3 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    grid-area: section3;
+    background-color: #f39c23;
+}
+
+#section4 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    grid-area: section4;
+    background-color: #555;
+}
+
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    grid-area: footer;
+    background-color: #ccc;
+}
